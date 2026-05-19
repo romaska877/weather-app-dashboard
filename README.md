@@ -27,7 +27,7 @@ A responsive weather dashboard built with HTML, CSS and JavaScript using the Ope
 - GitHub Pages
 
 ## Live Demo
-
+https://romaska877.github.io/weather-app-dashboard/
 
 
 ## Project Purpose
