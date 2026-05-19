@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="weather-app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Weather Dashboard</p>
+        <h1>Check live weather by city.</h1>
+        <p class="subtitle">
+          Search for a city and view current conditions, temperature, wind speed and humidity.
+        </p>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle">Dark</button>
+    </section>
+
+    <form class="search-form" id="searchForm">
+      <input type="text" id="cityInput" placeholder="Enter city name, e.g. London" />
+      <button type="submit">Search</button>
+    </form>
+
+    <p class="message" id="message"></p>
+    <section class="recent-searches">
+  <h2>Recent Searches</h2>
+  <div class="recent-list" id="recentList"></div>
+</section>
+
+    <section class="weather-card" id="weatherCard">
+      <div class="weather-main">
+        <div>
+          <p class="location" id="locationName">London, GB</p>
+          <h2 id="temperature">18°C</h2>
+          <p class="condition" id="conditionText">Partly cloudy</p>
+        </div>
+
+        <div class="weather-icon" id="weatherIcon">☁️</div>
+      </div>
+
+      <div class="weather-details">
+        <article>
+          <p>Feels Like</p>
+          <h3 id="feelsLike">17°C</h3>
+        </article>
+
+        <article>
+          <p>Humidity</p>
+          <h3 id="humidity">65%</h3>
+        </article>
+
+        <article>
+          <p>Wind Speed</p>
+          <h3 id="windSpeed">12 km/h</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-panel">
+      <h2>Project Features</h2>
+      <ul>
+        <li>Search weather by city</li>
+        <li>Fetch live API data</li>
+        <li>Show loading and error messages</li>
+        <li>Update the UI dynamically</li>
+        <li>Dark/light mode</li>
+        <li>Responsive dashboard layout</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
